@@ -13,7 +13,7 @@ Documentation for the step-by-step setup of a highly-available Kubernetes cluste
 | red-one    | falcon     | Worker      |
 | secondsun  | goldnine   | Control     |
 | hth        | kashyyk    | Worker      |
-| deathStar  | shire      | Worker      |
+| deathStar  | shire      | Control     |
 
 ## Components
 
