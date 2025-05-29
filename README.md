@@ -9,11 +9,11 @@ Documentation for the step-by-step setup of a highly-available Kubernetes cluste
 
 | Node       | VM         | Role        |
 |------------|------------|-------------|
-| red-one    | mandalore  | Control     |
-| red-one    | falcon     | Worker      |
-| secondsun  | goldnine   | Control     |
-| hth        | kashyyk    | Worker      |
-| deathStar  | shire      | Control     |
+| red-one    | red-two    | Control - P |
+| red-one    | red-three  | Worker      |
+| secondsun  | gold-two   | Control     |
+| hth        | blue-two   | Worker      |
+| deathStar  | gray-three | Control     |
 
 ## Components
 
