@@ -1,4 +1,8 @@
-k8s-sr-one.net-cluster: Highly Available Kubernetes Homelab
+##Highly Available Kubernetes Homelab
+![Docker Build](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+
 This repository documents the setup and configuration of a five-node Kubernetes cluster built on Proxmox virtual machines. This project emphasizes high availability for the control plane and leverages key tools like MetalLB for bare-metal load balancing, an NGINX Ingress Controller for traffic routing, and Cloudflare Tunnel for secure external access. The cluster hosts a custom Dockerized web application, showcasing a full end-to-end deployment.
 
 ## Features 
