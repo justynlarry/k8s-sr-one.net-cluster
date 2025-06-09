@@ -1,0 +1,13 @@
+apiVersion: crd.projectcalico.org/v1
+kind: BGPConfiguration
+metadata:
+  name: default
+spec:
+  logSeverityScreen: Info
+  nodeToNodeMeshEnabled: true
+  asNumber: 64512 # Standard private AS number
+  serviceClusterIPs:
+  - cidr: 10.96.0.0/12 # Adjust this if your service CIDR is different (default for kubeadm)
+#  nodeAddressDetectionV4:
+#    cidrs:
+#    - 192.168.0.0/24 # This limits Calico to only detect IPs within this range
