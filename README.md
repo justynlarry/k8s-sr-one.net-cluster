@@ -1,11 +1,11 @@
-##Highly Available Kubernetes Homelab
+# Highly Available Kubernetes Homelab
 ![Docker Build](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 
 This repository documents the setup and configuration of a five-node Kubernetes cluster built on Proxmox virtual machines. This project emphasizes high availability for the control plane and leverages key tools like MetalLB for bare-metal load balancing, an NGINX Ingress Controller for traffic routing, and Cloudflare Tunnel for secure external access. The cluster hosts a custom Dockerized web application, showcasing a full end-to-end deployment.
 
-## Features 
+# Features 
 Five-Node Cluster: A robust setup with a mix of control plane and worker nodes.
 High-Availability (HA) Control Plane: Utilizes kube-vip to ensure the Kubernetes API server remains accessible even if a control plane node fails.
 Bare-Metal Load Balancing: MetalLB provides LoadBalancer services, integrating seamlessly with your on-premises network.
@@ -13,7 +13,7 @@ NGINX Ingress Controller: Manages external access to services within the cluster
 Secure External Access: Cloudflare Tunnel creates a secure, outbound-only connection to expose your applications without opening inbound firewall ports.
 Custom Dockerized Application: Demonstrates how to deploy and manage a simple web application.
 
-## Topology
+# Topology
 The cluster consists of five virtual machines hosted on Four Proxmox nodes, with distinct roles:
 
 Proxmox Host	VM Name	    Role	      IP Address (Example)
@@ -27,7 +27,7 @@ deathStar	    gray-three  Worker	    192.168.0.105
 ** Control (Secondary Control Plane): These nodes join the cluster as additional control plane members, contributing to high availability.
 ** Worker: These nodes run your application workloads. 
 
-## Components
+# Components
 Kubernetes: Container orchestration platform.
 Proxmox: Virtualization platform for hosting VMs.
 Containerd: Container runtime.
@@ -38,7 +38,7 @@ NGINX Ingress Controller: An Ingress controller for Kubernetes using NGINX as a 
 Cloudflare Tunnel: Connects your infrastructure to Cloudflare without opening inbound firewall ports.
 Docker: Used for building and pushing application images.
 
-File Structure
+# File Structure
 ```
 .
 ├── html/                     # Directory containing your web application's HTML files
@@ -51,14 +51,14 @@ File Structure
 └── README.md                 # This README file
 ```
 
-##Goals Achieved
+# Goals Achieved
 - High-availability Control Plane (via kube-vip)
 - Bare-metal Load Balancer (via MetalLB)
 - External Ingress via Cloudflare Tunnel
 - GitOps-style deployment manifests for easy management
 - Setup and Installation Guide
 
-##This section provides a detailed, step-by-step guide to setting up your Kubernetes homelab cluster.
+# This section provides a detailed, step-by-step guide to setting up your Kubernetes homelab cluster.
 
 1. Infrastructure Setup
 Before you begin, ensure you have five virtual machines provisioned on your Proxmox nodes.
@@ -409,7 +409,7 @@ Create a Tunnel.
 Configure the Tunnel to route traffic from your desired domain (e.g., www.sr-one.net) to the NGINX Ingress Controller's external IP on port 80.
 Update DNS records in Cloudflare to point to your Tunnel.
 
-## Post-Installation Steps
+# Post-Installation Steps
 Distribute Kubeconfig to Other Control Plane Nodes
 To manage the cluster from your secondary control plane nodes, copy the admin.conf file from the primary control plane:
 
@@ -426,15 +426,15 @@ By default, control plane nodes have a taint that prevents pods from being sched
 kubectl taint nodes goldnine node-role.kubernetes.io/control-plane- || true
 kubectl taint nodes chewbacca node-role.kubernetes.io/control-plane- || true
 ```
-Contributing
+# Contributing
 Feel free to open issues or pull requests if you have suggestions for improvements or encounter any problems.
 
-Author
+# Author
 Justyn Larry – @jlarry77
 email:  justynlarry@gmail.com
 
-License
+# License
 This project is open-sourced under the MIT License (You should create a LICENSE file in your repository with the MIT license text).
 
-Questions or Feedback?
+# Questions or Feedback?
 If you have any questions about this setup or want to provide feedback, please feel free to reach out or open an issue!
