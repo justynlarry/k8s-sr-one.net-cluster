@@ -33,8 +33,11 @@ deathStar      gray-three      Worker	      192.168.0.105
 ```
 
 ** Control-P (Primary Control Plane): This node initializes the cluster and is responsible for running control plane components.
+
 ** Control (Secondary Control Plane): These nodes join the cluster as additional control plane members, contributing to high availability.
+
 ** Worker: These nodes run your application workloads. 
+
 
 # Components
 - Kubernetes: Container orchestration platform.
