@@ -436,7 +436,7 @@ Justyn Larry – @jlarry77
 email:  justynlarry@gmail.com
 
 # License
-This project is open-sourced under the MIT License (You should create a LICENSE file in your repository with the MIT license text).
+This project is open-sourced under the MIT License.
 
 # Questions or Feedback?
 If you have any questions about this setup or want to provide feedback, please feel free to reach out or open an issue!
