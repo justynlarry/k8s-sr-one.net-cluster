@@ -17,12 +17,12 @@ Custom Dockerized Application: Demonstrates how to deploy and manage a simple we
 The cluster consists of five virtual machines hosted on Four Proxmox nodes, with distinct roles:
 
 ```
-Proxmox Host      VM Name	      Role	          IP Address (Example)
-red-one    	      red-two  	      Control-P       192.168.0.101
-red-one	          red-three       Worker  	      192.168.0.102
-secondsun	      gold-two	      Control    	  192.168.0.103
-hth	              blue-two        Control    	  192.168.0.104
-deathStar	      gray-three      Worker	      192.168.0.105
+Proxmox Host    VM Name    Role    IP Address (Example)
+red-one        red-two  	      Control-P       192.168.0.101
+red-one        red-three       Worker  	      192.168.0.102
+second        sungold-two	      Control    	  192.168.0.103
+hth        blue-two        Control    	  192.168.0.104
+deathStar    gray-three      Worker	      192.168.0.105
 ```
 
 ** Control-P (Primary Control Plane): This node initializes the cluster and is responsible for running control plane components.
