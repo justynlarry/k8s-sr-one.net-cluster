@@ -75,14 +75,14 @@ deathStar      gray-three      Worker	      192.168.0.105
 1. Infrastructure Setup
 Before you begin, ensure you have five virtual machines provisioned on your Proxmox nodes.
 
-Preparing the VMs
-Operating System: Ubuntu Server 20.04 LTS (or newer stable release).
-Resources:
-Control Plane Nodes (mandalore, goldnine, chewbacca): 2 CPUs, 4GB RAM each.
-Worker Nodes (falcon, shire): 2 CPUs, 2GB RAM each.
-Network: All VMs must be on the same virtual network with static IP addresses assigned. Ensure network connectivity between all VMs.
-Install Container Runtime
-Install a container runtime (e.g., containerd) on all nodes:
+- Preparing the VMs
+- Operating System: Ubuntu Server 20.04 LTS (or newer stable release).
+- Resources:
+- Control Plane Nodes (mandalore, goldnine, chewbacca): 2 CPUs, 4GB RAM each.
+- Worker Nodes (falcon, shire): 2 CPUs, 2GB RAM each.
+- Network: All VMs must be on the same virtual network with static IP addresses assigned. Ensure network connectivity between all VMs.
+- Install Container Runtime
+- Install a container runtime (e.g., containerd) on all nodes:
 
 ```
 # Example for containerd (ensure you follow official containerd installation guide for your OS)
