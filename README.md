@@ -1,7 +1,14 @@
 # Highly Available Kubernetes Homelab
-![Docker Build](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-ED1C24?style=for-the-badge&logo=proxmox&logoColor=white)
+![Containerd](https://img.shields.io/badge/Containerd-575757?style=for-the-badge&logo=containerd&logoColor=white)
+![Calico](https://img.shields.io/badge/Calico-ED8B00?style=for-the-badge&logo=projectcalico&logoColor=white)
+![Kube-VIP](https://img.shields.io/badge/Kube--VIP-00B2A9?style=for-the-badge&logo=kubernetes&logoColor=white)
+![MetalLB](https://img.shields.io/badge/MetalLB-3B82F6?style=for-the-badge&logo=kubernetes&logoColor=white)
+![NGINX Ingress](https://img.shields.io/badge/NGINX--Ingress-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Cloudflare Tunnel](https://img.shields.io/badge/Cloudflare--Tunnel-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
 
 This repository documents the setup and configuration of a five-node Kubernetes cluster built on Proxmox virtual machines. This project emphasizes high availability for the control plane and leverages key tools like MetalLB for bare-metal load balancing, an NGINX Ingress Controller for traffic routing, and Cloudflare Tunnel for secure external access. The cluster hosts a custom Dockerized web application, showcasing a full end-to-end deployment.
 
