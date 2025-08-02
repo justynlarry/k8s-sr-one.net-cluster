@@ -13,12 +13,12 @@
 This repository documents the setup and configuration of a five-node Kubernetes cluster built on Proxmox virtual machines. This project emphasizes high availability for the control plane and leverages key tools like MetalLB for bare-metal load balancing, an NGINX Ingress Controller for traffic routing, and Cloudflare Tunnel for secure external access. The cluster hosts a custom Dockerized web application, showcasing a full end-to-end deployment.
 
 # Features 
-Five-Node Cluster: A robust setup with a mix of control plane and worker nodes.
-High-Availability (HA) Control Plane: Utilizes kube-vip to ensure the Kubernetes API server remains accessible even if a control plane node fails.
-Bare-Metal Load Balancing: MetalLB provides LoadBalancer services, integrating seamlessly with your on-premises network.
-NGINX Ingress Controller: Manages external access to services within the cluster, supporting host-based routing.
-Secure External Access: Cloudflare Tunnel creates a secure, outbound-only connection to expose your applications without opening inbound firewall ports.
-Custom Dockerized Application: Demonstrates how to deploy and manage a simple web application.
+- Five-Node Cluster: A robust setup with a mix of control plane and worker nodes.
+- High-Availability (HA) Control Plane: Utilizes kube-vip to ensure the Kubernetes API server remains accessible even if a control plane node fails.
+- Bare-Metal Load Balancing: MetalLB provides LoadBalancer services, integrating seamlessly with your on-premises network.
+- NGINX Ingress Controller: Manages external access to services within the cluster, supporting host-based routing.
+- Secure External Access: Cloudflare Tunnel creates a secure, outbound-only connection to expose your applications without opening inbound firewall ports.
+- Custom Dockerized Application: Demonstrates how to deploy and manage a simple web application.
 
 # Topology
 The cluster consists of five virtual machines hosted on Four Proxmox nodes, with distinct roles:
