@@ -18,7 +18,7 @@ The cluster consists of five virtual machines hosted on Four Proxmox nodes, with
 
 ```
 Proxmox Host    VM Name        Role           IP Address (Example)
-red-one        red-two  	   Control-P      192.168.0.101
+red-one        red-two         Control-P      192.168.0.101
 red-one        red-three       Worker  	      192.168.0.102
 secondsun      gold-two	       Control    	  192.168.0.103
 hth            blue-two        Control    	  192.168.0.104
