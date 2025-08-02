@@ -30,15 +30,15 @@ deathStar      gray-three      Worker	      192.168.0.105
 ** Worker: These nodes run your application workloads. 
 
 # Components
-Kubernetes: Container orchestration platform.
-Proxmox: Virtualization platform for hosting VMs.
-Containerd: Container runtime.
-Calico: CNI plugin for network policies and connectivity.
-Kube-VIP: Provides a virtual IP (VIP) for the Kubernetes API server for high availability.
-MetalLB: A bare-metal load-balancer implementation for Kubernetes, providing external IP addresses for services.
-NGINX Ingress Controller: An Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer.
-Cloudflare Tunnel: Connects your infrastructure to Cloudflare without opening inbound firewall ports.
-Docker: Used for building and pushing application images.
+- Kubernetes: Container orchestration platform.
+- Proxmox: Virtualization platform for hosting VMs.
+- Containerd: Container runtime.
+- Calico: CNI plugin for network policies and connectivity.
+- Kube-VIP: Provides a virtual IP (VIP) for the Kubernetes API server for high availability.
+- MetalLB: A bare-metal load-balancer implementation for Kubernetes, providing external IP addresses for services.
+- NGINX Ingress Controller: An Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer.
+- Cloudflare Tunnel: Connects your infrastructure to Cloudflare without opening inbound firewall ports.
+- Docker: Used for building and pushing application images.
 
 # File Structure
 ```
