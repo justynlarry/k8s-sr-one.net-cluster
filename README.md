@@ -442,7 +442,7 @@ kubectl taint nodes chewbacca node-role.kubernetes.io/control-plane- || true
 Feel free to open issues or pull requests if you have suggestions for improvements or encounter any problems.
 
 # Author
-Justyn Larry – @jlarry77
+Justyn Larry – @justynlarry
 email:  justynlarry@gmail.com
 
 # License
